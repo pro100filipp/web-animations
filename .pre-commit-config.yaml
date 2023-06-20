@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: tsc-typescheck
+        name: tsc-typescheck
+        language: system
+        description: Run `tsc` compiler to check project files
+        entry: npx tsc --noEmit
+        types: ["ts"]
