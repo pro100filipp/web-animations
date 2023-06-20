@@ -7,3 +7,10 @@ repos:
         description: Run `tsc` compiler to check project files
         entry: npx tsc --noEmit
         types: ["ts"]
+      - id: elm-check
+        name: elm-check
+        language: system
+        description: Run `elm` compiler to check project files
+        entry: npx elm make --output=/dev/null
+        types: ["file"]
+        files: \.elm$

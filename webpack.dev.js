@@ -21,7 +21,7 @@ module.exports = merge(common, {
             loader: "elm-webpack-loader",
             options: {
               verbose: true,
-              debug: false,
+              debug: true,
               optimize: false,
             },
           },
